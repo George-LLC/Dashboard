@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dashboard</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<header>
+		<div class="logo">
+
+		</div>
+		<div class="nav_bar">
+			<ul class="nav_left">
+				<li class="actived">
+					<div class="nav_name">SERVERS</div>
+					<div class="line"></div>
+				</li>
+
+				<li>
+					<div class="nav_name">APPLICATIONS</div>
+					<div class="line"></div>
+				</li>
+				<li>
+					<div class="nav_name">USERS</div>
+					<div class="line"></div>
+				</li>
+				<li>
+					<div class="nav_name">BACKUPS</div>
+					<div class="line"></div>
+				</li>
+				<!-- <li class="plus"> -->
+					<div class="plus">
+						<a href=""></a>
+					</div>
+				<!-- </li> -->
+			</ul>
+			<ul class="nav_right">
+				<li class="icon_help">
+					<a href=""></a>
+				</li>
+				<li class="icon_bell">
+					<a href=""></a>
+				</li>
+				<li class="icon_user">
+					<a href=""></a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="content">
+		<div class="main">
+			<p class="main_header">
+				DEPLOY YOUR MANAGED APP
+			</p>
+			<div class="main_content">
+				<p>
+					Click On Application Bulider below to Build your first Application:
+				</p>
+				<button class="btn_builApp">
+					APPLICATON BUILDER
+				</button>
+				<p>
+					What Provider Would You Like To Use?
+				</p>
+				<div class="choise_provider">
+					<div class="do">
+						<img src="img/DO.png">
+						<p>Digital Ocean</p>
+						<img class="check_circle" src="img/check-circle.png">
+					</div>
+					<div class="linode">
+						<img src="img/linode.svg">
+						<p>Linode</p>
+						<img class="check_circle" src="img/check-circle.png">
+					</div>
+				</div>
+				<p>
+					What Size Server Would You Like To Use? Note: Youcan always scale your server size as required.
+				</p>
+				<div class="scale">
+
+
+					<div id="myProgress">
+					  <div id="myBar"></div>
+					  	<div class="btn_1 btn" onclick="move(1,1)"><div class="gb">1GB</div></div> 
+						<div class="btn_2 btn" onclick="move(2,10)"><div class="gb">2GB</div></div> 
+						<div class="btn_3 btn" onclick="move(3,20)"><div class="gb">4GB</div></div> 
+						<div class="btn_4 btn" onclick="move(4,30)"><div class="gb">8GB</div></div> 
+						<div class="btn_5 btn" onclick="move(5,40)"><div class="gb">16GB</div></div> 
+						<div class="btn_6 btn" onclick="move(6,50)"><div class="gb">32GB</div></div> 
+						<div class="btn_7 btn" onclick="move(7,60)"><div class="gb">48GB</div></div> 
+						<div class="btn_8 btn" onclick="move(8,70)"><div class="gb">64GB</div></div> 
+						<div class="btn_9 btn" onclick="move(9,80)"><div class="gb">96GB</div></div> 
+						<div class="btn_10 btn" onclick="move(10,90)"><div class="gb">128GB</div></div> 
+						<div class="btn_11 btn" onclick="move(11,100)"><div class="gb">192GB</div></div> 
+
+					</div>
+					<div class="selected_size">
+						<span id="num_size">2</span>GB, 1vCPU, 1TB <br> Transfer, 25GB SSD HDD
+					</div>
+					<br>
+
+
+
+
+					
+				</div>
+				<p>
+					What Location Would you like to use?
+				</p>
+				<select class="select_city">
+					<option>
+						New York
+					</option>
+					<option>
+						Los Angeles
+					</option>
+					<option>
+						Las Vegas
+					</option>
+				</select>
+				
+			</div>
+		</div>
+	</div>
+
+
+	<div class="footer_charge">
+		<div class="charge_text">
+			Hourly Charge $<span id="hourly_charg">0.0306</span> Monthly Charge $<span id="monthly_charge">22</span>
+		</div>
+		<button class="charge_btn">
+			Build Now!
+		</button>
+	</div>
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="lab.js"></script>
+
+	
+
+</body>
+</html>
